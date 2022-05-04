@@ -20,7 +20,7 @@ def pixels_to_ascii(image):
     pixels = image.getdata() #extracts the pixel values
     characters = ""
     for pixel in pixels:
-        characters += ASCII_CHARS[pixel//25]
+        characters += ASCII_CHARS[pixel//25]#get each pixel value 0-255 and the corresponding ascii character and join them as a string
     return (characters)
 
 #define main sequence
