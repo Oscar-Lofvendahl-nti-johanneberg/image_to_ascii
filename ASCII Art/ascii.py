@@ -1,4 +1,4 @@
-#PIL image library
+#PIL image library - py -m PIL install
 from PIL import Image 
 
 #define ascii list
@@ -44,7 +44,7 @@ def main(new_width=300):
     print(ascii_image)
 
     #Save the result to a file
-    with open("ascii_image.txt", "w") as f: #open file with mode as "w" to create a stream from file for writing
+    with open("ascii_image.txt", "w") as f: #opens and overwrites latest textfile 
         f.write(ascii_image) #writes over ascii image to textfile
 
 #run program
